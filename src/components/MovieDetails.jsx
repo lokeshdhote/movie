@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { asynclaodmovie } from "../store/actions/movieAction";
 import { removemovie } from '../store/reducers/movieSlice'
-import Loading from '../components/Loading'
+// import Loading from '../components/Loading'
 import HorizontalCards from '../components/partials/HorizontalCards'
 
 const MovieDetails = () => {
@@ -106,7 +106,7 @@ const MovieDetails = () => {
        <Outlet/>
         </div>
 
-    ) : (<Loading />)
+    ) : (<h1>not found</h1>)
 }
 
 export default MovieDetails

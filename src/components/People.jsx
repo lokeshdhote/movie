@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from '../utils/axios'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import Cards from './partials/Cards'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 
 const People = () => {
@@ -73,7 +73,7 @@ const People = () => {
             </InfiniteScroll>
         </div>
     ) : (
-        <Loading />
+       <h1>Not Found</h1>
     );
 };
 

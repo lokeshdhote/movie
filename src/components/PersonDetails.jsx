@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { asynclaodperson } from "../store/actions/personAction";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import HorizontalCards from "./partials/HorizontalCards";
-import Loading from "./Loading";
+// import Loading from "./Loading";
 import Dropdown from "./partials/Dropdown";
 import { removeperson } from "../store/reducers/personSlice";
 
@@ -180,7 +180,7 @@ const PersonDetails = () => {
             </div>
         </div>
     ) : (
-        <Loading />
+       <h1>not Found</h1>
     );
 };
 

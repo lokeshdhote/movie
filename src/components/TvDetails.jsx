@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { asynclaodtv } from "../store/actions/tvAction";
 import { removetv } from '../store/reducers/tvSlice'
-import Loading from '../components/Loading'
+// import Loading from '../components/Loading'
 import HorizontalCards from '../components/partials/HorizontalCards'
 
 const TvDetails = () => {
@@ -106,7 +106,9 @@ const TvDetails = () => {
             <Outlet />
         </div>
 
-    ) : (<Loading />)
+    ) : (
+        <h1> Not Found</h1>
+    )
 }
 
 export default TvDetails

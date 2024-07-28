@@ -5,7 +5,7 @@ import Topnav from './partials/Topnav'
 import Header from './partials/Header'
 import Horizontal from './partials/HorizontalCards'
 import Dropdown from './partials/Dropdown'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 const Home = () => {
     document.title = 'SCSDB |  Homepage'
@@ -48,7 +48,7 @@ const Home = () => {
                 <Horizontal data={trending} />
             </div>
         </>
-    ) : <Loading />
+    ) : <h1>not found</h1>
 
 }
 

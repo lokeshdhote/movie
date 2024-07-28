@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Loading from '../Loading';
+// import Loading from '../Loading';
 
 const Cards = ({ data, title }) => {
      //console.log(title);
     if (!data || data.length === 0) {
-        return <div><Loading /></div>;
+        return <div>notfound</div>;
     }
     return (
         <div className='flex flex-wrap w-full h-full bg-[#1F1E24]'>

@@ -5,7 +5,7 @@ import Dropdown from './partials/Dropdown'
 import Cards from './partials/Cards'
 import axios from '../utils/axios'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 
 const Movies = () => {
@@ -84,7 +84,7 @@ const Movies = () => {
 
 
 
-    ) : (<Loading />)
+    ) : (<h1> Not Found</h1>)
 }
 
 export default Movies

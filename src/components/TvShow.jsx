@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from '../utils/axios'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import Cards from './partials/Cards'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 const TvShow = () => {
     document.title = "SCSDB | Tv Shows";
@@ -81,7 +81,9 @@ const TvShow = () => {
             </InfiniteScroll>
         </div>
 
-    ) : (<Loading />)
+    ) : (
+        <h1>not Found</h1>
+    )
 }
 
 export default TvShow

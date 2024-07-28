@@ -5,7 +5,7 @@ import Topnav from './partials/Topnav'
 import axios from '../utils/axios'
 import Cards from './partials/Cards'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 const Trending = () => {
     document.title = "SCSDB | Trending";
@@ -70,7 +70,9 @@ const Trending = () => {
                 <Cards data={trending} title={category} />
             </InfiniteScroll>
         </div>
-    ) : (<Loading />)
+    ) : (
+        <h1>not Found</h1>
+    )
 }
 
 export default Trending

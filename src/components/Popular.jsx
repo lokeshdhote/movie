@@ -5,7 +5,7 @@ import Dropdown from './partials/Dropdown'
 import Cards from './partials/Cards'
 import axios from '../utils/axios'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import Loading from './Loading'
+// import Loading from './Loading'
 
 const Popular = () => {
     document.title = 'SCSDB |  Popular'
@@ -69,7 +69,9 @@ const Popular = () => {
                 <Cards data={popular} title={category} />
             </InfiniteScroll>
         </div>
-    ) : (<Loading />)
+    ) : (
+        <h1>not Found</h1>
+    )
 }
 
 export default Popular
